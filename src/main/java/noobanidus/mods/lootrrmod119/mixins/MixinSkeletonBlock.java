@@ -61,7 +61,6 @@ public class MixinSkeletonBlock {
           loottable.fill(container, builder.create(LootContextParamSets.CHEST), LootrAPI.getLootSeed(l));
         }, info::lootrInfo$getLootTable, info::lootrInfo$getSeed);
         if (inventory instanceof SpecialChestInventory inventory2) {
-          inventory2.setMenuBuilder();
           NetworkHooks.openScreen((ServerPlayer) pPlayer, inventory2, pPos);
         }
         // You can add additional logic here to handle the UUID as needed
