@@ -1,0 +1,25 @@
+modLoader="javafml" 
+loaderVersion="[44,)"
+issueTrackerURL="https://github.com/noobanidus/lootrrmod119/issues"
+license="https://github.com/noobanidus/lootrrmod119/blob/1.20.1/LICENSE"
+[[mods]] 
+modId="lootrrmod119"
+version="${version}"
+displayName="Lootr & Rmod119 Compatibility"
+displayURL="https://minecraft.curseforge.com/projects/lootrrmod119"
+authors="Noobanidus"
+description='''
+Adds compatibility to Rmod119's skeletons.
+'''
+[[dependencies.LootrRmod119]]
+    modId="forge" 
+    mandatory=true 
+    versionRange="[47.2.0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.LootrRmod119]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,)"
+    ordering="NONE"
+    side="BOTH"
