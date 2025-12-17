@@ -54,3 +54,10 @@ apply from: 'gradle/maven2.gradle'
 apply from: 'gradle/signing.gradle'
 apply from: 'gradle/curseforge.gradle'
 apply from: 'gradle/version_checker.gradle'
+
+dependencies {
+    implementation(annotationProcessor("io.github.llamalad7:mixinextras-common:${rootProject.mixin_extras}"))
+    implementation(jarJar("io.github.llamalad7:mixinextras-forge:${rootProject.mixin_extras}")) {
+        jarJar.ranged(it, "[0.5.0,)")
+    }
+}
