@@ -35,14 +35,14 @@ public class MixinSkeletonBlockBlockEntity implements IProvidesLootrInfo {
     return lootr$uuid;
   }
 
-  public MenuBuilder lootr$getMenuBuilder() {
+/*  public MenuBuilder lootr$getMenuBuilder() {
     return new MenuBuilder() {
       @Override
       public AbstractContainerMenu build(int i, Inventory inventory, Container container, int i1) {
         return new SkeletonBlockMenu(i, inventory, this, data);
       }
     };
-  }
+  }*/
 
   @Override
   public ResourceLocation lootrInfo$getLootTable() {
